@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" href="./assets/css/bulma.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Brad Davis, a web developer</title>
 </head>
 
 <body>
-    <section class="hero-head is-bold is-mobile">
+    <section class="hero-head is-mobile">
         <nav class="navbar is-link">
             <div class="container">
                 <div class="navbar-brand">
-                    <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                    <span class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');" data-target="navbarMenuHeroA">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </span>
                 </div>
-                <div id="navbarMenuHeroA" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item">
+                <div id="navbarMenuHeroA" class="navbar-menu has-background-link">
+                    <div class="navbar-end has-background-link">
+                        <a class="navbar-item has-background-link has-text-white-ter">
                             Home
                         </a>
-                        <a class="navbar-item" href="#skills">
+                        <a class="navbar-item has-background-link has-text-white-ter" href="#skills">
                             Skills
                         </a>
-                        <a class="navbar-item" href="#projects">
+                        <a class="navbar-item has-background-link has-text-white-ter" href="#projects">
                             Projects
                         </a>
-                        <a class="navbar-item" href="#contact">
+                        <a class="navbar-item has-background-link has-text-white-ter" href="#contact">
                             Contact
                         </a>
                     </div>
@@ -38,7 +41,7 @@
             </div>
         </nav>
     </section>
-    <section class="hero is-link is-bold is-mobile" id="hero-head">
+    <section class="hero is-link is-mobile" id="hero-head">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title is-1">
@@ -51,7 +54,7 @@
         </div>
     </section>
 
-    <section class="hero has-background-grey-lighter is-bold is-mobile" id="hero-main">
+    <section class="hero has-background-grey-lighter is-mobile" id="hero-main">
         <div class="container has-text-white-ter">
             <div class="columns is-centered">
                 <div class="column is-ancestor is-centered">
@@ -71,32 +74,33 @@
                         <div class="tile is-child box has-text-link has-background-white-ter" id="projects">
                             <p class="title has-text-link">Projects</p>
                             <div class="box">
-                                <a class="subtitle has-text-link" href="https://davisbradleyj.github.io/covid19-tracker/">Covid-19
-                                    Tracker</a>
+                                <a class="subtitle has-text-link" href="https://davisbradleyj.github.io/covid19-tracker/">Covid-19 Tracker</a>
                                 <hr/>
                                 <img src="./assets/images/Covid19Tracker.gif" alt="Gif of Covid-19 Tracker">
                                 <p class="has-text-link">April 2020</p>
                             </div>
                             <div class="box">
-                                <a class="subtitle has-text-link" href="https://davisbradleyj.github.io/weather_dashboard/">Covid-19
-                                    Tracker</a>
+                                <a class="subtitle has-text-link" href="https://davisbradleyj.github.io/weather_dashboard/">Weather Dashboard</a>
                                 <hr/>
-                                <img src="./assets/images/Covid19Tracker.gif" alt="Gif of Weather Dashboard">
+                                <img src="./assets/images/weatherdashboard.gif" alt="Gif of Weather Dashboard">
                                 <p class="has-text-link">March 2020</p>
                             </div>
                             <div class="box">
-                                <a class="subtitle has-text-link" href="https://davisbradleyj.github.io/day_planner/">Covid-19
-                                    Tracker</a>
+                                <a class="subtitle has-text-link" href="https://davisbradleyj.github.io/day_planner/">Day Planner</a>
                                 <hr/>
-                                <img src="./assets/images/Covid19Tracker.gif" alt="Gif of Day Planner">
+                                <img src="./assets/images/Dayplanner.gif" alt="Gif of Day Planner">
                                 <p class="has-text-link">March 2020</p>
                             </div>
                         </div>
                         <div class="tile is-child box has-background-white-ter has-text-link" id="contact">
                             <p class="title has-text-link">Contact</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
-                                pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
-                                feugiat facilisis.</p>
+                            <a class="fa fa-google" style="font-size:18px" href="mailto:davis.bradleyj@gmail.com"> Gmail</a>
+                            <br>
+                            <a class="fa fa-linkedin" style="font-size:18px" href="https://www.linkedin.com/in/brad-davis-7885884/"> LinkedIn</a>
+                            <br>
+                            <a class="fa fa-github" style="font-size:18px" href="https://github.com/davisbradleyj/"> Github</a>
+                            <br>
+                            <p>Medium Icon, link</p>
                         </div>
                     </div>
                 </div>
